@@ -12,8 +12,8 @@ int Y = 4;
 int Z = 4;
 int N = GROUP * X * Y * Z;
 double Dt = 0.005;
-int STEP = 40000;
-double RHO = 0.01;
+int STEP = 2000;
+double RHO = 1.05;
 double TEMP = 1;
 double A = pow((4.0 / RHO), 1.0 / 3.0);
 double LX = A * X;
@@ -246,7 +246,6 @@ int main() {
 		y.push_back(p.y);
 		z.push_back(p.z);
 	}
-//potential_equil
 //snapshots
 //time dependency
 
