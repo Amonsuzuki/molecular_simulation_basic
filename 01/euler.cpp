@@ -34,7 +34,7 @@ int main() {
 	}
 	for (int i=1; i<N; i++) {
 		euler[i].ans_x = cos(sqrt(K/M) * euler[i].t);
-		euler[i].ans_v = -sin(sqrt(K/M) * euler[i].t);
+		euler[i].ans_v = -(sqrt(K/M)) * (sin(sqrt(K/M) * euler[i].t);
 	}
 	vector<double> t(N), x(N), v(N), ans_x(N), ans_v(N), kinetic(N), urgentia(N), total(N);
 	transform(euler.begin(), euler.end(), t.begin(), [](const plot& p) { return p.t; }); 
